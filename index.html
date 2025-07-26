@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/check-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+
+  <body>
+    <div id="contaner">
+      <h1 class="title">To-Do List</h1>
+      <section class="input-section">
+        <input type="text" placeholder="Item Name" class="task-name" />
+        
+        <input placeholder="Deadline" class="date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select name="Priority" class="Priority">
+          <option value="Priority">Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button class="addBtn">Add item</button>
+      </section>
+      <section class="task-contaner">
+        <h2 class="task_title">Today's TodoList</h2>
+
+        <div class="Today_box_container  task-item-contener">
+          
+        </div>
+      </section>
+      <section class="task-contaner">
+        <h2 class="task_title">Future TodoList</h2>
+         <div class="Future_box_container task-item-contener">
+      
+        </div>
+      </section>
+      <section class="task-contaner">
+        <h2 class="task_title">Completed TodoList</h2>
+            <div class="complete_box_container task-item-contener">
+        
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

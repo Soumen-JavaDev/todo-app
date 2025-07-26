@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#contaner {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 4%;
+}
+.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 5rem;
+  padding: 10px;
+  margin: 0;
+}
+.input-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.task-name {
+  width: 36%;
+  height: 63px;
+
+  min-width: 280px;
+  border: 2px solid black;
+  font-size: 24px;
+  font-weight: 400;
+}
+.date {
+  width: 25%;
+  height: 63px;
+
+  min-width: 135px;
+  border: 2px solid black;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.Priority {
+  width: 22%;
+  height: 63px;
+
+  min-width: 135px;
+  border: 2px solid black;
+  font-size: 24px;
+  font-weight: 400;
+}
+.addBtn {
+  width: 14%;
+  height: 63px;
+  min-width: 120px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+@media screen and (max-width: 622px) {
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .task-name {
+    width: 100%;
+    height: 43px;
+    font-size: 18px;
+  }
+  .date {
+    width: 49%;
+    height: 43px;
+  }
+  .Priority {
+    width: 47%;
+    height: 43px;
+  }
+  .addBtn {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.task_title {
+  display: flex;
+  text-align: left;
+  margin: 0px;
+}
+
+.task-contaner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  width: 100%;
+}
+
+.task-item-contener {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3% 1%;
+}
+
+.task_body1 {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  gap: 15px;
+
+  font-size: 24px;
+  font-weight: 400;
+}
+.body_item1 {
+  width: 40%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.body_item2 {
+  width: 20%;
+}
+.body_item3 {
+  width: 20%;
+}
+.body_item4 {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+img {
+  width: 30px;
+  cursor: pointer;
+}
+.complete_box_container > .task_body1 {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
+@media screen and (max-width: 622px) {
+  .task-item-contener {
+  
+  padding: 10% 1%;
+}
+  .task_body1 {
+    font-size: 18px;
+  }
+  .body_item1 {
+    width: 100%;
+  }
+  .body_item2 {
+    width: 50%;
+  }
+  .body_item3 {
+    width: 40%;
+  }
+  .body_item4 {
+    width: 50%;
+    display: block;
+
+    gap: 15px;
+    justify-content: flex-start;
+  }
+}
